@@ -27,13 +27,13 @@ from config import BOT_NAME as bn
 @Client.on_message(filters.command("start") & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        f"""Merhaba 👋! Telegram Gruplarının sesli sohbetlerinde müzik çalabiliyorum. Sizi şaşırtacak pek çok harika özelliğim var! \ n \ n 🔴 Telegram gruplarınızın sesli sohbetlerinizde müzik çalmamı ister misiniz? ? Beni nasıl kullanabileceğinizi öğrenmek için lütfen aşağıdaki \ ' 📜 Kullanım Kılavuzu 📜 \' düğmesini tıklayın. \ N \ n 🔴 Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir. \ N \ n 🔴 [Kullanıcı Kılavuzu] (https://telegra.ph/WylineDev-05-06-2) bahsedilen daha fazla bilgi ve komutlar \ n \ n @zeus0901 tarafından hazırlanan bir proje "" " ,
+        f"""Merhaba 👋! Telegram Gruplarının sesli sohbetlerinde müzik çalabiliyorum. Sizi şaşırtacak pek çok harika özelliğim var!\n\n🔴 Telegram gruplarınızın sesli sohbetlerinizde müzik çalmamı ister misiniz? ? Beni nasıl kullanabileceğinizi öğrenmek için lütfen aşağıdaki \'Kullanım Kılavuzu👤\' düğmesini tıklayın.\N\n🔴 Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir.\N\n🔴 [Kullanıcı Kılavuzu] (https://telegra.ph/WylineDev-05-06-2) bahsedilen daha fazla bilgi ve komutlar\n\nA @zeus0901 tarafından hazırlanan bir proje "" " ,
       """,
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
                     InlineKeyboardButton(
-                        "Manual Komutlar👤", url="https://telegra.ph/Daisy-X-04-19")
+                        "Manual Komutlar👤", url="https://telegra.ph/WylineDev-05-06-2")
                   ],[
                     InlineKeyboardButton(
                         "👨‍💻Güncelleme👨‍💻", url="https://t.me/WylineDevUpdate"
