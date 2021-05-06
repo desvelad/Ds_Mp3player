@@ -392,7 +392,7 @@ async def m_cb(b, cb):
             if callsmusic.queues.is_empty(chat_id):
                 callsmusic.pytgcalls.leave_group_call(chat_id)
                 
-                await cb.message.edit('Artık Çalma Listesi Yok..\nVC'den Ayrılma!')
+                await cb.message.edit('- Artık Çalma Listesi Yok..\n- VC'den Ayrılma!')
             else:
                 callsmusic.pytgcalls.change_stream(
                     chat_id,
@@ -400,7 +400,7 @@ async def m_cb(b, cb):
                 )
                 await cb.answer('Skipped')
                 await cb.message.edit((m_chat, qeue), reply_markup=r_ply(the_data))
-                await cb.message.reply_text(f'Atlanan parça\nŞimdi Yürütülüyor **{qeue[0][0]}**')
+                await cb.message.reply_text(f'- Atlanan parça\n- Şimdi Yürütülüyor **{qeue[0][0]}**')
 
     else:      
         if chat_id in callsmusic.pytgcalls.active_calls:
