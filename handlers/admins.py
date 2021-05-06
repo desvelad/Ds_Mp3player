@@ -39,7 +39,7 @@ async def update_admin(client, message):
     for u in admins:
         new_ads.append(u.user.id)
     a[message.chat.id] = new_ads
-    await message.reply_text('' Başarıyla güncelleştirildi yönetici listesi **{}**'.format(message.chat.title))
+    await message.reply_text('Başarıyla güncelleştirildi yönetici listesi **{}**'.format(message.chat.title))
 
 
 
