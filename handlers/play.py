@@ -104,7 +104,7 @@ def changeImageSize(maxWidth, maxHeight, image):
     newImage = image.resize((newWidth, newHeight))
     return newImage
 
-async def generate_cover(Requested_by, title, Views, duration, thumbnail):
+async def generate_cover(Requested_by, title, views, duration, thumbnail):
     async with aiohttp.ClientSession() as session:
         async with session.get(thumbnail) as resp:
             if resp.status == 200:
@@ -126,9 +126,9 @@ async def generate_cover(Requested_by, title, Views, duration, thumbnail):
     draw.text(
         (205, 590), f"Duration: {duration}", (255, 255, 255), font=font
     )
-    draw.text((205, 630), f"Views: {views}", (255, 255, 255), font=font)
+    draw.text((205, 630), f"View: {views}", (255, 255, 255), font=font)
     draw.text((205, 670),
-        f"Added By: {requested_by}",
+        f"Requested_By: {requested_by}",
         (255, 255, 255),
         font=font,
     )
