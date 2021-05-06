@@ -128,7 +128,7 @@ async def generate_cover(Requested_by, title, Views, duration, thumbnail):
     )
     draw.text((205, 630), f"Views: {views}", (255, 255, 255), font=font)
     draw.text((205, 670),
-        f"Adds: {requested_by}",
+        f"Added By: {requested_by}",
         (255, 255, 255),
         font=font,
     )
