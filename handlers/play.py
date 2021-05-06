@@ -392,7 +392,7 @@ async def m_cb(b, cb):
             if callsmusic.queues.is_empty(chat_id):
                 callsmusic.pytgcalls.leave_group_call(chat_id)
                 
-                await cb.message.edit('- Artık Çalma Listesi Yok..\n- VC'den Ayrılma!')
+                await cb.message.edit('- No More Playlist..\n- Leaving VC!')
             else:
                 callsmusic.pytgcalls.change_stream(
                     chat_id,
@@ -534,7 +534,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
         photo="final.png", 
-        caption=f"#⃣ İstediğiniz şarkı **Sıraya Alınd** {position}!",
+        caption=f"#⃣ İstediğiniz şarkı **Sıraya Alındı** {position}!",
         reply_markup=keyboard)
         os.remove("final.png")
         return await lel.delete()
