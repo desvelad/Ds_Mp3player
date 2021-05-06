@@ -104,7 +104,7 @@ def changeImageSize(maxWidth, maxHeight, image):
     newImage = image.resize((newWidth, newHeight))
     return newImage
 
-async def generate_cover(İstenen, Başlık, Görünümler, Süre, thumbnail):
+async def generate_cover(Requested_by, title, Views, duration, thumbnail):
     async with aiohttp.ClientSession() as session:
         async with session.get(thumbnail) as resp:
             if resp.status == 200:
@@ -128,7 +128,7 @@ async def generate_cover(İstenen, Başlık, Görünümler, Süre, thumbnail):
     )
     draw.text((205, 630), f"Views: {views}", (255, 255, 255), font=font)
     draw.text((205, 670),
-        f"Ekleyen: {requested_by}",
+        f"Adds: {requested_by}",
         (255, 255, 255),
         font=font,
     )
@@ -154,7 +154,7 @@ async def playlist(client, message):
         temp.append(t)
     now_playing = temp[0][0]
     by = temp[0][1].mention(style='md')
-    msg = "**Now Playing** in {}".format(message.chat.title)
+    msg = "**Şimdi Yürütülüyor** in {}".format(message.chat.title)
     msg += "\n- "+ now_playing
     msg += "\n- Req by "+by
     temp.pop(0)
@@ -290,7 +290,7 @@ async def m_cb(b, cb):
                 ) or (
                     callsmusic.pytgcalls.active_calls[chat_id] == 'paused'
                 ):
-            await cb.answer('Chat is not connected!', show_alert=True)
+            await cb.answer('Sohbet bağlı değil!', show_alert=True)
         else:
             callsmusic.pytgcalls.pause_stream(chat_id)
             
@@ -356,12 +356,12 @@ async def m_cb(b, cb):
             
             await cb.answer('Müzik Duraklatıldı!')
     elif type_ == 'cls':          
-        await cb.answer('Closed menu')
+        await cb.answer('Kapalı menü')
         await cb.message.delete()       
 
     elif type_ == 'menu':  
         stats = updated_stats(cb.message.chat, qeue)  
-        await cb.answer('Menu opened')
+        await cb.answer('Menü açıldı')
         marr = InlineKeyboardMarkup(
             [
                 [
@@ -392,7 +392,7 @@ async def m_cb(b, cb):
             if callsmusic.queues.is_empty(chat_id):
                 callsmusic.pytgcalls.leave_group_call(chat_id)
                 
-                await cb.message.edit('- Artık Çalma Listesi Yok..\n- VC'den Ayrılma!')
+                await cb.message.edit('Artık Çalma Listesi Yok..\nVC'den Ayrılma!')
             else:
                 callsmusic.pytgcalls.change_stream(
                     chat_id,
@@ -400,7 +400,7 @@ async def m_cb(b, cb):
                 )
                 await cb.answer('Skipped')
                 await cb.message.edit((m_chat, qeue), reply_markup=r_ply(the_data))
-                await cb.message.reply_text(f'- Atlanan parça\n- Şimdi Yürüteniyor **{qeue[0][0]}**')
+                await cb.message.reply_text(f'Atlanan parça\nŞimdi Yürütülüyor **{qeue[0][0]}**')
 
     else:      
         if chat_id in callsmusic.pytgcalls.active_calls:
@@ -412,7 +412,7 @@ async def m_cb(b, cb):
             callsmusic.pytgcalls.leave_group_call(chat_id)
             await cb.message.edit('Sohbeti Başarıyla Bıraktı!')
         else:
-            await cb.answer('Chat is not connected!', show_alert=True)
+            await cb.answer('Sohbet bağlı değil!', show_alert=True)
 
 @Client.on_message(command("play") & other_filters)
 async def play(_, message: Message):
@@ -424,7 +424,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "Wyline"
+        user.first_name =  "WylineBot"
     usar = user
     wew = usar.id
     try:
@@ -585,7 +585,7 @@ async def deezer(client: Client, message_: Message):
                               invitelink = await client.export_chat_invite_link(chid)
                           except:
                               await lel.edit(
-                                  "<b>Önce beni yor grubunun yöneticisi olarak ekle</b>",
+                                  "<b>Önce beni grubunun yöneticisi olarak ekle</b>",
                               )
                               return
 
@@ -618,7 +618,7 @@ async def deezer(client: Client, message_: Message):
     text = message_.text.split(" ", 1)
     queryy = text[1]
     res = lel
-    await res.edit(f"araştırıcı 👀👀👀  `{queryy}` deezer üzerinde")
+    await res.edit(f"Araştırıcı 👀👀👀  `{queryy}` deezer üzerinde")
     try:
         arq = ARQ("https://thearq.tech")
         r = await arq.deezer(query=queryy, limit=1)
@@ -629,7 +629,7 @@ async def deezer(client: Client, message_: Message):
         url = r[0]["url"]
     except:
         await res.edit(
-            "Kelimenin Tam Anlamıyla Hiçbir Şey Bulunamadı, İngilizceniz üzerinde çalışmalısınız!"
+            "Kelimenin Tam Anlamıyla Hiçbir Şey Bulunamadı, Türkçe üzerinde çalışmalısınız!"
         )
         is_playing = False
         return
@@ -667,7 +667,7 @@ async def deezer(client: Client, message_: Message):
         qeue.append(appendable)
         await res.edit_text("WylineDev= #️⃣ Konumda sıraya alındı {position}")
     else:
-        await res.edit_text("✯DaisyXmusic✯=▶️ Çalıyor.....")
+        await res.edit_text("WylineBot🎧=▶️ Çalıyor.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
@@ -715,7 +715,7 @@ async def jiosaavn(client: Client, message_: Message):
                               invitelink = await client.export_chat_invite_link(chid)
                           except:
                               await lel.edit(
-                                  "<b>Önce beni yor grubunun yöneticisi olarak ekle</b>",
+                                  "<b>Önce beni grubunun yöneticisi olarak ekle</b>",
                               )
                               return
 
