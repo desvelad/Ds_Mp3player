@@ -1,12 +1,12 @@
 <h1 align="centre">WYMUSIC V3 🎵</h1>
 
-### A bot that can play music on telegram group's voice call
+### Telegram grubunun sesli aramasinda müzik çalabilen bir bot
 
 # Telegram'da şu şekilde mevcuttur 
-[@WylineBot](https://t.me/WylineBot) 
+[WylineBot](https://t.me/WylineBot) 
 
 <p align="center">
-  <img src="https://telegra.ph/file/dd04b1968f1bc1169d162.jpg">
+  <img src="https://telegra.ph/WylineDev-05-07.jpeg">
 </p>
 
 <h2> Yeni Özellikler 💣 </h2>
