@@ -1,26 +1,26 @@
-<h1 align="centre">DAISYXMUSIC V3 🎵</h1>
+<h1 align="centre">WYLİNEDEVMUSIC V3 🎵</h1>
 
 ### A bot that can play music on telegram group's voice call
 
-# Available on telegram as @DaisyXbot
+# Available on telegram as @WylineBot
 
 <p align="center">
   <img src="https://telegra.ph/file/dd04b1968f1bc1169d162.jpg">
 </p>
 
-<h2> Whats new 🔥 </h2>
+<h2> Yeni Özellikler 💣 </h2>
 
-- Thumbnail Support
-- Playlist Support
+- Küçük Resim Desteği
+- Oynatma Liste Desteği
 - Current playback support
 - Showing track names when skipping
 - Zero downtime, Fully Stable
 - DEEZER,YOUTUBE & SAAVN PLAYBACK SUPPORTED
 - Settings panel
 - Control with buttons
-- Userbot auto join
+- Userbot Otomatik Giriş
 
-### Commands 🛠
+### Komutkar 🤖
 #### For all in group
 
 - `/play <song name>` - play song you requested
