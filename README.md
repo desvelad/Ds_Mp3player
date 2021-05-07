@@ -5,9 +5,7 @@
 # Telegram'da şu şekilde mevcuttur 
 [WylineBot](https://t.me/WylineBot) 
 
-<p align="center">
-  <img src="https://telegra.ph/WylineDev-05-07.jpeg">
-</p>
+<a href="https://ibb.co/WFgGHhd"><img src="https://i.ibb.co/zbGQmML/wylinelogo.png" alt="wylinelogo" border="0"></a>
 
 <h2> Yeni Özellikler 💣 </h2>
 
