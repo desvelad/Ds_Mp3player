@@ -3,7 +3,7 @@
 ### A bot that can play music on telegram group's voice call
 
 # Telegram'da şu şekilde mevcuttur 
-[@WylineBot](https://t.me/WylineBot 
+[@WylineBot](https://t.me/WylineBot) 
 
 <p align="center">
   <img src="https://telegra.ph/file/dd04b1968f1bc1169d162.jpg">
