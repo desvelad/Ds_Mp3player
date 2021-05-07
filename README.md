@@ -22,26 +22,26 @@
 ### Komutkar 🤖
 #### Gruptaki herkes için
 
-- ' /play <song name> ' - istediğiniz şarkıyı çalın
-- ' /dplay <song adı> ' - deezer aracılığıyla istediğiniz şarkıyı çalın
-- ' /splay <song name> ' - jio saavn aracılığıyla istediğiniz şarkıyı çalın
-- ' /playlist ' - Şimdi çalma listesini göster
-- ' /current ' - Şimdi oynatıyor göster
-- ' /song <song name> ' - istediğiniz şarkıları hızlı bir şekilde indirin
-- ' /search <query> ' - youtube'da detayları içeren videoları arayın
-- ' /deezer <song adı> ' - deezer aracılığıyla istediğiniz şarkıları hızlı bir şekilde indirin
-- ' /saavn <song adı> ' - istediğiniz şarkıları saavn üzerinden hızlı bir şekilde indirin
-- ' /video <suz adı> ' - istediğiniz videoları hızlı bir şekilde indirin
+- `/play <song name>` - istediğiniz şarkıyı çalın
+- `/dplay <song adı>` - deezer aracılığıyla istediğiniz şarkıyı çalın
+- `/splay <song name>` - jio saavn aracılığıyla istediğiniz şarkıyı çalın
+- `/playlist` - Şimdi çalma listesini göster
+- `/current` - Şimdi oynatıyor göster
+- `/song <song name>` - istediğiniz şarkıları hızlı bir şekilde indirin
+- `/search <query>` - youtube'da detayları içeren videoları arayın
+- `/deezer <song adı>` - deezer aracılığıyla istediğiniz şarkıları hızlı bir şekilde indirin
+- `/saavn <song adı>` - istediğiniz şarkıları saavn üzerinden hızlı bir şekilde indirin
+- `/video <suz adı>` - istediğiniz videoları hızlı bir şekilde indirin
 
 #### Yalnızca yöneticiler.
-- '/player' - açık müzik çalar ayarları paneli
-- '/pause' - şarkı çalmayı duraklat
-- '/resume' - şarkı çalmaya devam et
-- '/skip' - sonraki şarkıyı çal
-- '/end' - müzik çalmayı durdur
-- '/userbotjoin' - asistanı sohbetinize davet edin
-- '/userbotleave' - asistanı sohbetinizden çıkarın
-- '/admincache' - Yönetici listesini yenile
+- `/player` - açık müzik çalar ayarları paneli
+- `/pause` - şarkı çalmayı duraklat
+- `/resume` - şarkı çalmaya devam et
+- `/skip` - sonraki şarkıyı çal
+- `/end` - müzik çalmayı durdur
+- `/userbotjoin` - asistanı sohbetinize davet edin
+- `/userbotleave` - asistanı sohbetinizden çıkarın
+- `/admincache` - Yönetici listesini yenile
 
 
 ### Deploy To Heroku</h4>
