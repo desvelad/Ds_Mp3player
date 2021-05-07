@@ -11,53 +11,41 @@
 
 - Küçük Resim Desteği
 - Oynatma Liste Desteği
-- Current playback support
-- Showing track names when skipping
-- Zero downtime, Fully Stable
-- DEEZER,YOUTUBE & SAAVN PLAYBACK SUPPORTED
-- Settings panel
-- Control with buttons
+- Mevcut oynatma desteği
+- Atlarken parça adlarını gösterme
+- Sıfır kapalı kalma süresi, Tamamen Kararlı
+- DEEZER, YOUTUBE VE SAAVN OYNATMA DESTEKLİ
+- Ayarlar paneli
+- Düğmelerle kontrol edin
 - Userbot Otomatik Giriş
 
 ### Komutkar 🤖
-#### For all in group
+#### Gruptaki herkes için
 
-- `/play <song name>` - play song you requested
-- `/dplay <song name>` - play song you requested via deezer
-- `/splay <song name>` - play song you requested via jio saavn
-- `/playlist` - Show now playing list
-- `/current` - Show now playing
-- `/song <song name>` - download songs you want quickly
-- `/search <query>` - search videos on youtube with details
-- `/deezer <song name>` - download songs you want quickly via deezer
-- `/saavn <song name>` - download songs you want quickly via saavn
-- `/video <song name>` - download videos you want quickly
+- '/play <song name>' - istediğiniz şarkıyı çalın
+- '/dplay <song adı>' - deezer aracılığıyla istediğiniz şarkıyı çalın
+- '/splay <song name>' - jio saavn aracılığıyla istediğiniz şarkıyı çalın
+- '/playlist' - Şimdi çalma listesini göster
+- '/current' - Şimdi oynatıyor göster
+- '/song <song name>' - istediğiniz şarkıları hızlı bir şekilde indirin
+- '/search <query>' - youtube'da detayları içeren videoları arayın
+- '/deezer <song adı>' - deezer aracılığıyla istediğiniz şarkıları hızlı bir şekilde indirin
+- '/saavn <song adı>' - istediğiniz şarkıları saavn üzerinden hızlı bir şekilde indirin
+- '/video <suz adı>' - istediğiniz videoları hızlı bir şekilde indirin
 
-#### Admins only.
-- `/player` - open music player settings panel
-- `/pause` - pause song play
-- `/resume` - resume song play
-- `/skip` - play next song
-- `/end` - stop music play
-- `/userbotjoin` - invite assistant to your chat
-- `/userbotleave` - remove assistant from your chat
-- `/admincache` - Refresh admin list
+#### Yalnızca yöneticiler.
+- '/player' - açık müzik çalar ayarları paneli
+- '/pause' - şarkı çalmayı duraklat
+- '/resume' - şarkı çalmaya devam et
+- '/skip' - sonraki şarkıyı çal
+- '/end' - müzik çalmayı durdur
+- '/userbotjoin' - asistanı sohbetinize davet edin
+- '/userbotleave' - asistanı sohbetinizden çıkarın
+- '/admincache' - Yönetici listesini yenile
 
 
 ### Deploy To Heroku</h4>
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/teamdaisyx/DaisyXMusic)
 
-Use [@DaisyXStringGeneratorBot](https://t.me/DaisyXStringGeneratorBot) to get pyrogram string session or [repl](https://repl.it/@SpEcHiDe/GenerateStringSession)
-
-### Credits
-- [InukaASiTH](https://github.com/InukaAsith): Dev
-- [Wrench](https://github.com/EverythingSuckz/): Dev
-- [QueenArzoo](https://github.com/QueenArzoo): Dev
-- [lucifeermorningstar](https://github.com/lucifeermorningstar): Dev
-- [AuraXNetwork](https://github.com/AuraXNetwork/AuraXMusicBot)
-- [Hamker Cat](https://github.com/thehamkercat/)
-- [Anjana-Ma](https://github.com/Anjana-Ma): 
-- [ImJanindu](https://github.com/ImJanindu): 
-- [Laky](https://github.com/Laky-64) & [Andrew](https://github.com/AndrewLaneX): PyTgCalls
-- [Original Repo owners](https://github.com/suprojects/CallsMusic)
+Pyrogram dizesi oturumu almak için kullan [repl](https://repl.it/@SpEcHiDe/GenerateStringSession)
