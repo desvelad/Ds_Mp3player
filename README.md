@@ -1,4 +1,4 @@
-<h1 align="centre">WYLİNEDEVMUSIC V3 🎵</h1>
+<h1 align="centre">WYMUSIC V3 🎵</h1>
 
 ### A bot that can play music on telegram group's voice call
 
