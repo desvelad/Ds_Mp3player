@@ -27,7 +27,7 @@ from config import BOT_NAME as bn
 @Client.on_message(filters.command("start") & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        f"""Merhaba 👋! Telegram Gruplarının sesli sohbetlerinde müzik çalabiliyorum. Sizi şaşırtacak pek çok harika özelliğim var!\n\n🔴 Telegram gruplarınızın sesli sohbetlerinizde müzik çalmamı ister misiniz? ? Beni nasıl kullanabileceğinizi öğrenmek için lütfen aşağıdaki \'Kullanım Kılavuzu👤\' düğmesini tıklayın.\n\n🔴 Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir.\n\n🔴 [Kullanıcı Kılavuzu] (https://telegra.ph/WylineDev-05-06-2) bahsedilen daha fazla bilgi ve komutlar\n\nA @zeus0901 tarafından hazırlanan bir proje "" " ,
+        f"""Merhaba 👋! Telegram Gruplarının sesli sohbetlerinde müzik çalabiliyorum. Sizi şaşırtacak pek çok harika özelliğim var!\n\n🔴 Telegram gruplarınızın sesli sohbetlerinizde müzik çalmamı ister misiniz? ? Beni nasıl kullanabileceğinizi öğrenmek için lütfen aşağıdaki \'Kullanım Kılavuzu👤\' düğmesini tıklayın.\n\n🔴 Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir.\n\n🔴Daha fazla bilgi ve komut için [Komutlar](https://telegra.ph/WylineDev-05-06-2)\n\nA @zeus0901 tarafından hazırlanan bir proje """,
       """,
         reply_markup=InlineKeyboardMarkup(
             [ 
@@ -45,8 +45,12 @@ async def start(_, message: Message):
               ],[ 
                     InlineKeyboardButton(
                         "Sohbet Grup 🇹🇷", url="https://t.me/OlympusCh4t"
-                    )]
-            ]
+            ],[
+                    InlineKeyboardButton(
+            "👸🏼 Add DaisyX to your group",
+            url=f"https://telegram.me/daisyxbot?startgroup=true",                    )]
+           )]
+    ]
         ),
      disable_web_page_preview=True
     )
