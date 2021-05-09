@@ -48,8 +48,8 @@ async def start(_, message: Message):
                     ) 
             ],[
                     InlineKeyboardButton(
-                        "👸🏼 Add DaisyX to your group",
-            url=f"https://telegram.me/daisyxbot?startgroup=true",
+                        "🎧 Wyline'yi grubunuza ekle",
+            url=f"https://telegram.me/wylinebot?startgroup=true",
                     )]     
             ]
         ),
