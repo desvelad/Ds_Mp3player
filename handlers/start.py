@@ -28,7 +28,6 @@ from config import BOT_NAME as bn
 async def start(_, message: Message):
     await message.reply_text(
         f"""Merhaba 👋! Telegram Gruplarının sesli sohbetlerinde müzik çalabiliyorum. Sizi şaşırtacak pek çok harika özelliğim var!\n\n🔴 Telegram gruplarınızın sesli sohbetlerinizde müzik çalmamı ister misiniz? ? Beni nasıl kullanabileceğinizi öğrenmek için lütfen aşağıdaki \'Kullanım Kılavuzu👤\' düğmesini tıklayın.\n\n🔴 Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir.\n\n🔴Daha fazla bilgi ve komut için [Komutlar](https://telegra.ph/WylineDev-05-06-2)\n\nA @zeus0901 tarafından hazırlanan bir proje """,
-      """,
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
