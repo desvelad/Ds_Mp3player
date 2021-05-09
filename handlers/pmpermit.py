@@ -24,5 +24,5 @@ from pyrogram.types import Chat, Message, User
 
 @USER.on_message(filters.text & filters.private & ~filters.me & ~filters.bot)
 async def pmPermit(client: USER, message: Message):
-  await USER.send_message(message.chat.id,"Merhaba, Bu bir müzik asistanı hizmetidir.\n\n ❗️ Kurallar:\n   - Sohbete izin yok\n   - İstenmeyen postaya izin verilmez\n\n 👉 **USERBOT GRUBUNUZA KATıLAMAZSA GRUP DAVETI BAĞLANTıSı VEYA KULLANıCı ADı GÖNDER.**\n\n ⚠️ Disclamer: Burada bir mesaj gönderiyorsanız, yönetici mesajınızı görecek ve sohbete katılacaktır\n    - Bu kullanıcıyı gizli gruplara ekleme.\n   - Özel bilgileri burada paylaşmayın\n\n")
+  await USER.send_message(message.chat.id,"Merhaba, Bu bir müzik asistanı hizmetidir.\n\n ❗️ Kurallar:\n   - Sohbete izin yok\n   - İstenmeyen postaya izin verilmez\n\n 👉 **USERBOT GRUBUNUZA KATıLAMAZSA GRUP DAVETI BAĞLANTıSı VEYA KULLANıCı ADı GÖNDER.**\n\n ⚠️ Disclamer: Burada bir mesaj gönderiyorsanız, yönetici mesajınızı görecek ve sohbete katılacaktır\n    - Bu kullanıcıyı gizli gruplara ekleyebilirsin\n   - Özel bilgileri burada paylaşmayın\n\n")
   return                        
