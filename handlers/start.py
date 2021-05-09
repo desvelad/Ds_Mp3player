@@ -45,12 +45,13 @@ async def start(_, message: Message):
               ],[ 
                     InlineKeyboardButton(
                         "Sohbet Grup 🇹🇷", url="https://t.me/OlympusCh4t"
+                    ) 
             ],[
                     InlineKeyboardButton(
-            "👸🏼 Add DaisyX to your group",
-            url=f"https://telegram.me/daisyxbot?startgroup=true",                    )]
-           )]
-    ]
+                        "👸🏼 Add DaisyX to your group",
+            url=f"https://telegram.me/daisyxbot?startgroup=true",
+                    )]     
+            ]
         ),
      disable_web_page_preview=True
     )
