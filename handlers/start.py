@@ -1,5 +1,5 @@
-# Daisyxmusic (Telegram bot project )
-# Copyright (C) 2021  Inukaasith 
+# Daisyxmusic (Telegram bot projesi )
+# Telif Hakkı (C) 2021  Inukaasith 
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -24,22 +24,22 @@ from config import BOT_NAME as bn
 
 
 
-@Client.on_message(filters.command("start") & filters.private & ~filters.channel)
-async def start(_, message: Message):
-    await message.reply_text(
-        f"""Hello 👋 there! I can play music in voice chats of Telegeam Groups. I have a lot of cool feature that will amaze you!\n\n🔴 Do you want me to play music in your Telegram groups'voice chats? Please click the \'📜 User Manual 📜\' button below to know how you can use me.\n\n🔴 The Assistant must be in your group to play music in the voice chat of your group.\n\n🔴 More info & commands mentioned in the [User Manual](https://telegra.ph/Daisy-X-04-19)\n\nA project by @TeamDaisyX""",
+@ Müşteri . on_message ( filtreler . komut ( "başlat" ) ve filtreler . özel & ~ filtreler . kanal )
+async def start ( _ , mesaj : Mesaj ):
+    mesajı bekleyin . yanıt_metni (
+        f"" "Merhaba 👋! Telegram Gruplarının sesli sohbetlerinde müzik çalabiliyorum Sizi şaşırtacak pek çok harika özelliğim var! \ n \ n 🔴 Telegram gruplarınızın sesli sohbetlerinizde müzik çalmamı ister misiniz? Beni nasıl kullanabileceğinizi öğrenmek için lütfen \ ' Kullanım Kılavuzu \ ' tıklayın. \ n \ n 🔴 Grubunuzun sesli sohbetinde müzik çalabilmek için Asistanın grubunuzda olması gerekir. \ n \ n 🔴Daha fazla bilgi ve komut için [Komutlar] (https://telegra.ph/RgMusic-05-11)\n\nA @RickGrimes_1 tarafından hazırlanan bir proje """,
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
                     InlineKeyboardButton(
-                        "📜 User Manual 📜", url="https://telegra.ph/Daisy-X-04-19")
+                        "📜 Manual komutlar 📜", url="https://telegra.ph/RgMusic-05-11")
                   ],[
                     InlineKeyboardButton(
-                        "👨‍💻 Updates 👨‍💻", url="https://t.me/daisyxupdates"
+                        "👨‍💻 Güncelleme 👨‍💻", url="https://t.me/RgMusicChannel"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "Support Chat 🎙️", url="https://t.me/DaisySupport_Official"
+                        "Sohbet Grup 🎙️", url="https://t.me/Desveladoo"
                     )]
             ]
         ),
