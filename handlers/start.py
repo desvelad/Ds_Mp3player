@@ -40,7 +40,11 @@ async def start ( _ , mesaj : Mesaj ):
                 ],[ 
                     InlineKeyboardButton(
                         "Sohbet Grup 🎙️", url="https://t.me/Desveladoo"
-                    )]
+                    )
+                 ],[
+                    İnlineKeyboardButton(
+                        "🎧RgMusic'i Grubunuza ekle",
+                             url=f"http://t.me/RgMusiccbot",
             ]
         ),
      disable_web_page_preview=True
@@ -48,12 +52,12 @@ async def start ( _ , mesaj : Mesaj ):
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**🔴 Music player is online**""",
+      await message.reply_text("""**🔴 Müzik çalar yayında**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🎙️ Support Group 🎙️", url="https://t.me/daisysupport_Official")
+                        "🎙️ Support Group 🎙️", url="https://t.me/RgMusicSupport")
                 ]
             ]
         )
