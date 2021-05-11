@@ -424,7 +424,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "WylineBot"
+        user.first_name =  "RgMusic"
     usar = user
     wew = usar.id
     try:
@@ -454,7 +454,7 @@ async def play(_, message: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Taşan Bekleme Hatası 🔴 \nUser {user.first_name} userbot için yoğun istekler nedeniyle grubunuza katılamadı! Kullanıcının grupta yasaklı olmadığından emin olun."
-                                  "\n\nOr el ile ekleme @WylineBot grubunuza ve yeniden deneyin</b>",
+                                  "\n\nOr el ile ekleme @Rgmusicplayerbot grubunuza ve yeniden deneyin</b>",
                               )
                               pass
     try:
@@ -551,7 +551,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Oynamak** burada istenen şarkı {} WylineBot🇹🇷".format(
+        caption="▶️ **Oynamak** burada istenen şarkı {} RgMusic🇹🇷".format(
         message.from_user.mention()
         ),
     )
@@ -572,7 +572,7 @@ async def deezer(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "WylineMusic"
+        user.first_name =  "RgMusic"
     usar = user
     wew = usar.id
     try:
@@ -602,7 +602,7 @@ async def deezer(client: Client, message_: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Taşan Bekleme Hatası 🔴 \nUser {user.first_name} userbot için yoğun istekler nedeniyle grubunuza katılamadı! Kullanıcının grupta yasaklı olmadığından emin olun."
-                                  "\n\nOr Elle ekl @WylineBot grubunuza ve yeniden deneyin</b>",
+                                  "\n\nOr Elle ekl @Rgmusicplayerbot grubunuza ve yeniden deneyin</b>",
                               )
                               pass
     try:
@@ -665,9 +665,9 @@ async def deezer(client: Client, message_: Message):
         loc = file_path
         appendable = [s_name, r_by, loc]
         qeue.append(appendable)
-        await res.edit_text("WylineDev= #️⃣ Konumda sıraya alındı {position}")
+        await res.edit_text("RgMusic= #️⃣ Konumda sıraya alındı {position}")
     else:
-        await res.edit_text("WylineBot🎧=▶️ Çalıyor.....")
+        await res.edit_text("RgMusic🎧=▶️ Çalıyor.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
@@ -702,7 +702,7 @@ async def jiosaavn(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "WylineMusic"
+        user.first_name =  "RgMusic"
     usar = user
     wew = usar.id
     try:
@@ -732,7 +732,7 @@ async def jiosaavn(client: Client, message_: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Taşan Bekleme Hatası 🔴 \nUser {user.first_name} userbot için yoğun istekler nedeniyle grubunuza katılamadım! Kullanıcının grupta yasaklı olmadığından emin olun."
-                                  "\n\nOr @WylineBot grubunuza el ile ekleyin ve yeniden deneyin</b>",
+                                  "\n\nOr @Rgmusicplayerbot grubunuza el ile ekleyin ve yeniden deneyin</b>",
                               )
                               pass
     try:
@@ -776,7 +776,7 @@ async def jiosaavn(client: Client, message_: Message):
              [
                InlineKeyboardButton(
                    text="Güncelleme Kanalı",
-                   url='https://t.me/WylineDevUpdate')
+                   url='https://t.me/Rgmusicchanell')
              ],
              [       
                InlineKeyboardButton(
@@ -800,12 +800,12 @@ async def jiosaavn(client: Client, message_: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"WylineBot🎧=#️⃣ Konumda sıraya alındı {position}",
+            caption=f"RGmusic🎧=#️⃣ Konumda sıraya alındı {position}",
         
         )           
            
     else:
-        await res.edit_text("WylineBot🎧=▶️ Çalıyor.....")
+        await res.edit_text("RGmusic🎧=▶️ Çalıyor.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
