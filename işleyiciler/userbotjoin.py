@@ -39,7 +39,7 @@ async def addchannel(client, message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "RgMusicbott"
+        user.first_name =  "Rgyardimci"
 
     try:
         await USER.join_chat(invitelink)
@@ -53,7 +53,7 @@ async def addchannel(client, message):
         print(e)
         await message.reply_text(
             f"<b>🛑 Taşan bekleme Hatası 🛑 \n Kullanıcı {user.first_name} user bot için yoğun katılım istekleri nedeniyle grubunuza katılamadı! Asistanın grupta yasaklı olmadığından emin olun."
-            "\n\nOr ekleme yerinden @RgMusicbott i grubunuza ekleyin</b>",
+            "\n\nOr ekleme yerinden @Rgyardimci i grubunuza ekleyin</b>",
         )
         return
     await message.reply_text(
