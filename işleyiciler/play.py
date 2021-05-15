@@ -776,7 +776,7 @@ async def jiosaavn(client: Client, message_: Message):
              [
                InlineKeyboardButton(
                    text="Güncelleme Kanalı",
-                   url='https://t.me/RgMusicChannel')
+                   url='https://t.me/RgBotSupport')
              ],
              [       
                InlineKeyboardButton(
