@@ -35,11 +35,11 @@ async def start ( _ , mesaj : Mesaj ):
                         "📜 Manual komutlar 📜", url="https://telegra.ph/RgMusic-05-11")
                   ],[
                     InlineKeyboardButton(
-                        "👨‍💻 Güncelleme 👨‍💻", url="https://t.me/RgMusicChannel"
+                        "👨‍💻 Güncelleme 👨‍💻", url="https://t.me/RgBotSupport"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "Sohbet Grup 🎙️", url="https://t.me/Desveladoo"
+                        "Sohbet Grup 🎙️", url="https://t.me/RgSohbet"
                     )
                  ],[
                     İnlineKeyboardButton(
@@ -57,7 +57,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🎙️ Support Group 🎙️", url="https://t.me/RgMusicSupport")
+                        "🎙️ Support Group 🎙️", url="https://t.me/RgBotSupport")
                 ]
             ]
         )
